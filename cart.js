@@ -35,8 +35,7 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +54,11 @@ const cart = [
 
 //CODE HERE
 
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    tax = tax * cartTotal
+    cartTotal = cartTotal + tax - couponValue
+    return cartTotal
+}
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,8 +82,12 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+    Customer object: Name, Phone, Address, Last Ordered. I chose these properties because they would be nice to know when communicating with a customer. If you know what they ordered last, 
+    you could ask (How was the [item] you ordered last time?)
 
 */
+
+
 
 /*
     Now, create a customer object following your own
@@ -88,3 +95,12 @@ const cart = [
 */
 
 //CODE HERE
+
+const customer = {
+    name: "Blake Raymond",
+    phone: 1234567890,
+    address: "123 Maple St",
+    lastOrder: "Large Drunk Candy"
+ }
+
+console.log(customer)

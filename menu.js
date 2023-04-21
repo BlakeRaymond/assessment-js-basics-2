@@ -41,6 +41,7 @@ const pizza = {
    tags: ["sweet", "salty", "savory"]
 }
 
+console.log(pizza)
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -151,7 +152,7 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((tagged) => tagged.tags.includes("succulent"))
+const filteredFood = foodArr.filter(tagged => tagged.tags.includes("succulent"))
 console.log(filteredFood)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
