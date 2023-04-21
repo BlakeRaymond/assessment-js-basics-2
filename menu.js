@@ -32,7 +32,14 @@
 
 //CODE HERE
 
-
+const pizza = {
+   name: "Drunk Candy",
+   price: 19.99,
+   category: "Late Night Snacks",
+   popularity: 8,
+   rating: 5,
+   tags: ["sweet", "salty", "savory"]
+}
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +51,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +62,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -64,6 +73,8 @@
 
 //CODE HERE
 
+const {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +85,8 @@
 
 //CODE HERE
 
+const {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,7 +102,40 @@
 
 //CODE HERE
 
-
+const foodArr = [
+    {
+        name: "Chocko-Chipper",
+        price: 3.99,
+        category: "Late Night Sweets",
+        popularity: 7,
+        rating: 4,
+        tags: ["homemade", "chocolatey", "fan favorite"]
+    },
+    {
+        name: "Cookie Dough Deliciousness",
+        price: 5.99,
+        category: "Frozen Desserts",
+        popularity: 10,
+        rating: 5,
+        tags: ["creamy", "smooth", "fan favorite"]
+    },
+    {
+        name: "Western Bacon Cheeseburger",
+        price: 13.99,
+        category: "Burgers",
+        popularity: 6,
+        rating: 3,
+        tags: ["meaty", "burger", "Gutbuster!"]
+    },
+    {
+        name: "Med D'lite",
+        price: 8.99,
+        category: "Late Night Snacks",
+        popularity: 9,
+        rating: 3,
+        tags: ["succulent", "share-able!", "fan favorite"]
+    },
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -104,6 +150,9 @@
 */
 
 //CODE HERE
+
+const filteredFood = foodArr.filter((tagged) => tagged.tags.includes("fan favorite"))
+console.log(filteredFood)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
