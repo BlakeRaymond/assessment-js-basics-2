@@ -151,7 +151,7 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((tagged) => tagged.tags.includes("fan favorite"))
+const filteredFood = foodArr.filter((tagged) => tagged.tags.includes("succulent"))
 console.log(filteredFood)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
